@@ -41,7 +41,7 @@ local config = {
   webgpu_power_preference = 'HighPerformance',
 
   -- appearance
-  font = wezterm.font('Menlo'),
+  font = wezterm.font_with_fallback({ 'Menlo', 'Iosevka', 'monospace' }),
   force_reverse_video_cursor = true,
   use_fancy_tab_bar = false,
   color_scheme = 'AdventureTime',
